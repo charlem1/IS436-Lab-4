@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>UMBC Information Systems — Contact</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Contact information and office hours for UMBC Information Systems.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header role="banner">
+  <div class="container topbar">
+    <div class="brand">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/UMBC_Seal_Logo.png" alt="UMBC seal">
+      <div>
+        <h1>UMBC — Information Systems</h1>
+        <div class="breadcrumbs" aria-label="Breadcrumbs">Home › Contact</div>
+      </div>
+    </div>
+    <nav role="navigation" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="undergraduate.html">Undergraduate</a></li>
+        <li><a class="current" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container" role="main">
+  <section aria-labelledby="contact-title">
+    <h2 id="contact-title">Contact Us</h2>
+    <p>For questions about admissions, curriculum, or advising please use the contacts below or the contact form.</p>
+
+    <div style="display:flex;gap:30px;flex-wrap:wrap;margin-top:18px">
+      <div style="flex:1;min-width:260px">
+        <div class="card">
+          <h3>Department Office</h3>
+          <p>Phone: (410) 455-0000<br>Office: Engineering Building 123</p>
+          <p>Office hours: Mon–Fri 9:00–16:00</p>
+        </div>
+
+        <div class="card" style="margin-top:12px">
+          <h3>Key Contacts</h3>
+          <p>Undergrad Advisor: is-advisor@umbc.edu<br>Undergrad Coordinator: is-coord@umbc.edu</p>
+        </div>
+      </div>
+
+      <div style="flex:1;min-width:300px">
+        <div class="card contact-form">
+          <h3>Send us a message</h3>
+          <form method="post" action="#" aria-label="Contact form">
+            <div class="form-row">
+              <div>
+                <label for="fname">First name</label>
+                <input id="fname" name="fname" type="text" placeholder="First name" required>
+              </div>
+              <div>
+                <label for="lname">Last name</label>
+                <input id="lname" name="lname" type="text" placeholder="Last name" required>
+              </div>
+            </div>
+            <div class="form-row full">
+              <div>
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="you@domain.edu" required>
+              </div>
+            </div>
+            <div class="form-row full">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="How can we help?" required></textarea>
+            </div>
+            <div style="display:flex;gap:8px;align-items:center">
+              <button type="submit" style="background:var(--primary);border:none;padding:10px 14px;border-radius:6px;font-weight:600">Send message</button>
+              <small class="muted" style="color:var(--muted)">We aim to reply within 3 business days.</small>
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer class="container" role="contentinfo">
+  <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;">
+    <div>
+      <strong>UMBC Information Systems</strong><br>
+      1000 Hilltop Circle, Baltimore, MD
+    </div>
+    <div class="version">Prototype v1.0 — 2025-11-05</div>
+  </div>
+</footer>
+</body>
+</html>

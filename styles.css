@@ -1,0 +1,58 @@
+
+/* UMBC IS Department - Prototype styles (accessible, responsive) */
+:root{
+  --primary:#f4b41a; /* UMBC gold-like */
+  --dark:#1b1b1b;
+  --muted:#6b6b6b;
+  --bg:#ffffff;
+  --container:1200px;
+  --max-width:1100px;
+  --radius:10px;
+  --font-sans: "Helvetica Neue", Arial, sans-serif;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:var(--font-sans);color:var(--dark);background:var(--bg);-webkit-font-smoothing:antialiased}
+a{color:var(--dark);text-decoration:none}
+header{background:#fff;border-bottom:1px solid #eee;position:sticky;top:0;z-index:10}
+.container{max-width:var(--max-width);margin:0 auto;padding:0 20px}
+.topbar{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+.brand{display:flex;align-items:center;gap:12px}
+.brand img{width:48px;height:48px;border-radius:6px}
+.brand h1{font-size:18px;margin:0}
+nav ul{list-style:none;margin:0;padding:0;display:flex;gap:18px;align-items:center}
+nav a{padding:8px 10px;border-radius:6px}
+nav a.current{background:var(--primary);color:#111;font-weight:600}
+
+/* Breadcrumbs */
+.breadcrumbs{font-size:13px;color:var(--muted);margin-top:8px}
+
+/* Hero */
+.hero{display:flex;gap:20px;align-items:center;padding:28px 0}
+.hero .left{flex:2}
+.hero .right{flex:1;background:#fafafa;padding:18px;border-radius:8px;border:1px solid #eee}
+
+/* Cards & sections */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin:18px 0}
+.card{padding:18px;border-radius:8px;border:1px solid #eee;background:#fff;min-height:100px}
+.card h3{margin:0 0 8px 0}
+.card p{margin:0;color:var(--muted)}
+
+/* Form */
+.contact-form{max-width:700px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px}
+.form-row.full{grid-template-columns:1fr}
+label{display:block;font-size:13px;margin-bottom:6px}
+input,textarea,select{width:100%;padding:10px;border:1px solid #ddd;border-radius:6px;font-size:14px}
+textarea{min-height:120px;resize:vertical}
+
+/* Footer */
+footer{border-top:1px solid #eee;padding:18px 0;margin-top:30px;color:var(--muted)}
+.version{font-size:13px}
+
+/* Responsive */
+@media(max-width:720px){
+  .hero{flex-direction:column}
+  .form-row{grid-template-columns:1fr}
+  nav ul{gap:8px}
+}
